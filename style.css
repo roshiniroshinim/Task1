@@ -1,0 +1,553 @@
+
+        /* Custom CSS to style the navbar */
+        .navbar {
+            
+            box-sizing: border-box;
+            height: 60px;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 100;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .container-fluid img{
+            position: relative;
+            left: 40px;
+            
+
+        }
+
+        .navbar-brand {
+            color: rgb(12, 10, 10) !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: black !important;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white; /* Change hamburger icon color */
+        }
+
+        /* Custom styling for the navbar on smaller screens */
+        @media (max-width: 767px) {
+            .navbar {
+                background-color:white;
+            }
+        }
+        .container {
+            display: flex;
+            justify-content: space-between; /* Ensures space between the image and content */
+            align-items: center; /* Vertically aligns both image and content */
+            gap: 20px; 
+            /* Optional: space between the image and content */
+        }
+        
+        .flex-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .image  img {
+            position: relative;
+            top: 20px;
+            height: 400px;
+            width: 350px;
+            max-width: 100%;
+            margin-left: 40px;
+             /* This makes the image container take available space */
+        }
+
+        
+        .content {
+            flex: 2; /* The content will take more space (right side) */
+            text-align: left; 
+            margin-left: 30px;/* Ensures content is left aligned */
+        }
+        
+        .btn-container {
+            display: flex;
+            gap: 40px;
+            top: 20px;
+            position: relative;
+         /* Space between the navigation buttons */
+        }
+        
+        .time-display {
+            font-weight: 100;
+            font-size: 35px;
+        }
+         .time-display h2{
+            font-size: 38px;
+            font-weight: 200px;
+         }
+        
+            /* Mobile responsive styling */
+            @media (max-width: 768px) {
+                .flex-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+    
+                .content {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+               
+            }
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack image and content on small screens */
+        align-items: center; /* Center align on smaller screens */
+        gap: 20px;
+    }
+
+    /* Content section takes full width on smaller screens */
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Image will also take full width */
+    .image {
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 100%; /* Ensure the image is responsive */
+    }
+}
+.image .p{
+    color: black;
+    width: 30%;
+    height: 30px;
+    border: 1px solid black;
+}
+/* About Section Styles */
+.about-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Left side container for two images */
+.about-images-left {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    flex: 1; 
+    display:grid;
+    flex-wrap: wrap;/* Allow the left side to take up equal space */
+}
+
+.about-image-left
+ {
+    margin-bottom: 20px; /* Space between images */
+    max-width: 100%;
+}
+
+.about-image-left img
+ {
+    width: 200px;
+    height:200px;
+    display: block;
+}
+.about-image-left1
+ {
+    margin-bottom: 20px; /* Space between images */
+    max-width: 100%;
+}
+
+.about-image-left1 img
+ {
+    width: 200px;
+    height:200px;
+    display: block;
+    gap: 20px;
+}
+/* Right side image */
+.about-image-right {
+    flex: 1; /* Allow the right side image to take up space */
+    max-width: 100%;
+}
+
+.about-image-right img {
+    width:150px;
+    height:150px;
+    display: block;
+}
+
+/* Center Content Section */
+.about-content {
+    flex: 2; /* Content takes up more space */
+    max-width: 50%;
+    
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Make the about container stack vertically on small screens */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Make images on the left and right take full width on smaller screens */
+    .about-images-left,
+    .about-image-right {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    /* Content section takes full width on smaller screens */
+    .about-content {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    /* Ensure images are responsive */
+    .about-image-left img,
+    .about-image-left1 img,
+    .about-image-right img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* About Section Styles */
+.about-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* About Container */
+.about-container {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Space between left and right content */
+    align-items: flex-start; /* Align content to the top */
+    gap: 30px; /* Gap between left and right content */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Left and Right Content */
+.about-left,
+.about-right1 {
+    flex: 1; /* Both sections take equal space */
+    max-width: 48%; /* Limit width of each content area */
+}
+
+/* Heading styles for left and right */
+.about-left h2
+{
+    font-size:30px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Content Styling */
+.about-left p
+ {
+    font-size: 1em;
+    line-height: 1.6;
+}
+.about-right1 p{
+    font-size: 1em;
+    line-height: 1.6;
+    position: relative;
+    top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center; /* Center content */
+        gap: 20px; /* Smaller gap between sections */
+    }
+
+    .about-left,
+    .about-right1 {
+        max-width: 90%; /* Allow content to take up more width on small screens */
+    }
+}
+/* General Image Section Styles */
+.image-section {
+
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Image Container to hold the groups of images */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the images to wrap on smaller screens */
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between images */
+}
+
+/* Each Image Group */
+.image-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%; /* Make sure images take full width of the container */
+}
+
+.image-item {
+    flex: 1;
+    max-width: 30%; /* Each image will take up 30% of the container width */
+}
+
+/* Ensure images fit their containers */
+.image-item img {
+    width:250px;
+    height:250PX;
+    gap: 10px;
+}
+.image-item1 img {
+    width:350px;
+    height:300PX;
+    display: block;
+}
+
+/* Hide second image group initially */
+.image-group.hidden {
+display: flex; /* This will hide the group with the next 2 images */
+}
+
+/* Button to show more images (if desired) */
+.show-more-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.show-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .image-item {
+        max-width: 45%; /* Images take up less space on small screens */
+    }
+
+    /* Hide images in groups, stack them in smaller screens */
+    .image-group {
+        flex-direction: column; /* Stack images vertically */
+        max-width: 100%; /* Allow full width for small screens */
+    }
+
+    /* Adjust the button position */
+    .show-more-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* General Styles for Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+/* Container to hold the form and image */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px; /* Space between form and image */
+}
+
+/* Left Side: Contact Form */
+.contact-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Right Side: Image */
+.contact-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack the form and image vertically on small screens */
+        gap: 30px;
+    }
+
+    .contact-form, .contact-image {
+        flex: none;
+        width: 100%; /* Ensure both elements take full width */
+    }
+}
+/* General Styles for Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space out the sections */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+    flex-wrap: wrap; /* Allow sections to wrap on small screens */
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Social Links Styling */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links li a:hover {
+    color: #007bff;
+}
+
+/* Right Section Styling */
+.footer-right p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack the sections vertically on small screens */
+        align-items: center; /* Center content */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        max-width: 100%; /* Make sections take full width */
+        margin-bottom: 20px;
+    }
+
+    .footer-left h3, .footer-center h3, .footer-right h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-left, .footer-center, .footer-right {
+        padding: 15px;
+    }
+
+    .social-links li a {
+        font-size: 14px;
+    }
+
+    .footer-right p {
+        font-size: 12px;
+    }
+}
+.footer-left img{
+    color: white;
+}
